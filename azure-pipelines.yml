@@ -16,11 +16,11 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'Azure Resource Manager'
+    azureResourceManagerConnection: 'DevOps'
     subscriptionId: 'dcfd9e4a-a833-4e37-a3f6-106e91ef93c8'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'dev-test'
-    location: '<your-closest-location>'
+    location: 'westeurope'
     templateLocation: 'Linked artifact'
     csmFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.json'
     csmParametersFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json'
