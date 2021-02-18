@@ -16,7 +16,7 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'DevOps'
+    azureResourceManagerConnection: 'Azure Resource Manager'
     subscriptionId: 'dcfd9e4a-a833-4e37-a3f6-106e91ef93c8'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'dev-test'
