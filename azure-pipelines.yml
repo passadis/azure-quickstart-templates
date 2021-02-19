@@ -21,4 +21,4 @@ steps:
     subscriptionId: 'f710da36-6cc1-43e7-b7c9-dc01d0c48c95'
     action: 'DeleteRG'
     resourceGroupName: 'dev-test'
-    location: ''westeurope'
+    location: 'westeurope'
